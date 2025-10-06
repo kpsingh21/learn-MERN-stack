@@ -25,8 +25,9 @@
 // export default App;
 import { useEffect, useState } from "react";
 
+import AddStudent from "./components/form/addstudent";
 
-function App() {
+function App2() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -37,6 +38,14 @@ function App() {
   }, []);
 
   return <h1>{message}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <AddStudent />
+    </div>
+  );
 }
 
 export default App;
